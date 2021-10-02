@@ -1,0 +1,988 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+	font-weight: normal;
+	text-decoration: none;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ol, ul {
+	list-style: none;
+}
+del {
+	text-decoration: line-through;
+}
+body {
+	font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	color: #000;
+	overflow-x: hidden;
+	min-width: 320px;
+	font-weight: 500;
+}
+input,textarea,select{
+	font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
+	font-weight: 500;
+}
+
+a{
+	color: #000;
+}
+.thumb{
+	display: block;
+}
+.thumb img{
+	display: block;
+	width:100%;
+}
+p{
+	line-height:1.6em;
+	font-size: 16px;
+	font-family: "GT-Eesti", Arial;
+	font-weight: 500;
+	color: #000;
+}
+.hidden{
+	display:none;
+}
+br.clear {
+	clear: both;
+	line-height: 0;
+}
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+	max-width:1200px;
+}
+.flex-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Light.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Light.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Light.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Regular.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Regular.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Regular.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Medium.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Medium.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Medium.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Bold.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Bold.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal
+}
+::placeholder {
+  color: #9B9B9B;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #9B9B9B;
+}
+
+::-ms-input-placeholder {
+  color: #9B9B9B;
+}
+section#home{
+	background: url(../images/header-background.jpg) no-repeat;
+	background-position: top 50% left 50%;
+	margin-bottom: 100px;
+}
+section#home header{
+	height: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	margin-bottom: 100px;
+}
+section#home header h1{
+	width: 100px;
+}
+section#home header h1 a{
+}
+section#home header h1 a img{
+	display: block;
+	width: 100%;
+}
+section#home header nav{
+}
+section#home header div.menu-icon{
+	width: 5%;
+	display: none;
+}
+section#home header div.menu-icon:hover ~ nav.menu-bar{
+	right: 0;
+}
+section#home header div.menu-icon img{
+	display: block;
+	width: 50%;
+}
+section#home header nav.menu-bar{
+	background: #000;
+	position: fixed;
+	width: 15%;
+	padding: 5% 2%;
+	top: 0;
+	bottom: 0;
+	right: -500px;
+	transition: all 0.5s ease-in;
+}
+section#home header nav.menu-bar ul{
+	display: flex;
+	flex-direction: column;
+}
+section#home header nav.menu-bar ul li{
+	margin-bottom: 10px;
+}
+section#home header nav.menu-bar ul:last-child{
+	margin-bottom: 0;
+}
+section#home header nav ul{
+	display: flex;
+	justify-content: space-between;
+}
+section#home header nav ul li{
+	margin: auto 25px auto 0;
+}
+section#home header nav ul li a{
+	font-weight: 700;
+	color: #fff;
+}
+section#home header nav ul li a:hover{
+	text-decoration: underline;
+}
+section#home header nav ul li:last-child{
+	margin-right: 0;
+}
+section#home header nav ul li.arrow img{
+	width: 13px;
+    margin-left: 7px;
+    filter: invert(100%);
+}
+section#home header nav ul li.img{
+	width: 30px;
+}
+section#home header nav ul li.img a{
+}
+section#home header nav ul li.img a img{
+	width: 100%;
+	display: block;
+}
+section#home section.spotlight{
+	display: flex;
+	justify-content: space-between;
+}
+section#home section.spotlight div.left{
+	width: 45%;
+}
+section#home section.spotlight div.left h4.top{
+	color: #00BFD8;
+	margin-top: 50px;
+	font-size: 60px;
+	font-weight: 600;
+}
+section#home section.spotlight div.left h4.bottom{
+	font-size: 60px;
+	font-weight: 600;
+	margin-bottom: 50px;
+}
+section#home section.spotlight div.left p{
+	margin-bottom: 50px;
+}
+section#home section.spotlight div.left a.button{
+	background: #00bfd8;
+	padding: 15px 35px;
+	border-radius: 25px;
+	font-weight: 700;
+	color: #fff;
+	display: inline-block;
+}
+section#home section.spotlight div.left a.button:hover{
+	background: #fff;
+	border: 2px solid #00bfd8;
+	color: #00bfd8;
+}
+section#home section.spotlight div.right{
+	width: 45%;
+}
+section#home section.spotlight div.right img{
+	width: 100%;
+	display: block;
+}
+section#market{
+	margin-bottom: 100px;
+}
+section#market div.top{
+	margin-top: 50px;
+	text-align: center;
+}
+section#market div.top p{
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+section#market div.top div{
+	background: #E6E6FA;
+	width: 90%;
+	margin: 0 auto 100px;
+	padding: 30px 15px;
+	border-radius: 10px;
+}
+section#market div.top div ul{
+	display: flex;
+	justify-content: space-between;
+}
+section#market div.top div ul li{
+	width: 15%;
+}
+section#market div.top div ul li img{
+	width: 100%;
+	display: block;
+}
+section#market div.bottom{
+	text-align: center;
+}
+section#market div.bottom h5{
+	font-size: 35px;
+	font-weight: 700;
+	margin: 0 auto 25px;
+	width: 50%;
+}
+section#market div.bottom p{
+	width: 75%;
+	margin: 0 auto 50px;
+}
+section#market div.bottom ul{
+	display: flex;
+	justify-content: space-between;
+}
+section#market div.bottom ul li{
+	width: 30%;
+	border: 1px solid #000;
+	padding: 50px;
+	border-radius: 10px;
+}
+section#market div.bottom ul li div{
+	width: 100px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+}
+section#market div.bottom ul li div img{
+	width: 100%;
+	display: block;
+}
+section#market div.bottom ul li h5{
+	width: 100%;
+	font-size: 25px;
+}
+section#market div.bottom ul li p{
+	width: 100%;
+	margin: 0 auto;
+}
+section#design{
+	margin-bottom: 100px;
+}
+section#design ul{
+}
+section#design ul li{
+	display: flex;
+	justify-content: space-between;
+}
+section#design ul li:first-child{
+	margin-bottom: 50px;
+}
+section#design ul li div.head{
+	width: 45%;
+}
+section#design ul li div.head h4{
+	font-size: 40px;
+	font-weight: 700;
+	margin:75px auto 30px;
+	width: 100%;
+}
+section#design ul li div.head p{
+	margin-bottom: 50px;
+}
+section#design ul li div.head p.arrow{
+	margin-bottom: 10px;
+}
+section#design ul li div.head p img{
+	width: 15px;
+	margin-right: 10px;
+}
+section#design ul li div.head a.button{
+	background: #00BFD8;
+	color: #fff;
+	font-weight: 700;
+	padding: 15px 30px;
+	border-radius: 50px;
+}
+section#design ul li div.head a.button:hover{
+	background: #fff;
+	border: 2px solid #00bfd8;
+	color: #00bfd8;
+}
+section#design ul li div.image{
+	width: 50%;
+}
+section#design ul li div.image img{
+	width: 100%;
+	display: block;
+}
+section#pricing{
+	margin-bottom: 100px;
+	text-align: center;
+}
+section#pricing h5{
+	font-size: 40px;
+	font-weight: 700;
+	margin: 0 auto 30px;
+	width: 50%;
+}
+section#pricing p{
+	width: 60%;
+	margin: 0 auto 30px;
+	font-size: 18px;
+}
+section#pricing ul{
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+}
+section#pricing ul li{
+	width: 30%;
+	border: 1px solid #000;
+	border-radius: 10px;
+	padding: 30px 20px;
+	position: relative;
+}
+section#pricing ul li div.top{
+	border-bottom: 1px solid #000;
+}
+section#pricing ul li div.top h4{
+	font-size: 25px;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+section#pricing ul li div.top p{
+	width: 100%;
+	margin-bottom: 15px;
+}
+section#pricing ul li div.middle{
+	border-bottom: 1px solid #000;
+}
+section#pricing ul li div.middle h4{
+	font-size: 50px;
+	color: #00BFD8;
+	font-weight: 700;
+	display: flex;
+	margin: 20px auto 0;
+	width: 50%;
+}
+section#pricing ul li div.middle h4 p{
+	font-size: 25px;
+	color: #00bfd8;
+	width: 50%;
+	margin: 0;
+	width: 25%;
+}
+section#pricing ul li div.middle p{
+	margin-bottom: 20px;
+	width: 100%;
+}
+section#pricing ul li div.bottom{
+}
+section#pricing ul li div.bottom ul{
+	display: flex;
+	flex-direction: column;
+	margin: 20px 0;
+}
+section#pricing ul li div.bottom ul li{
+	width: 100%;
+	border: 0;
+	padding: 0;
+	margin-bottom: 20px;
+}
+section#pricing ul li div.bottom ul li:last-child{
+	margin-bottom: 0;
+}
+section#pricing ul li div.bottom ul li img{
+	width: 15px;
+	margin: 0 10px 0 0;
+}
+section#pricing ul li div.bottom ul li.cancel img{
+	width: 8px;
+}
+section#pricing ul li a.button{
+	background: #00BFD8;
+    color: #fff;
+    font-weight: 700;
+    padding: 10px 35px;
+    border-radius: 50px;
+    position: absolute;
+    bottom: -20px;
+    left: 28%;
+}
+section#pricing ul li a.button:hover{
+	background: #fff;
+	border: 2px solid #00bfd8;
+	color: #00bfd8;
+}
+section#form{
+	background: #f3f3f3;
+	padding: 10% ;
+}
+section#form section.wrapper{
+	display: flex;
+	justify-content: space-between;
+}
+section#form div.left{
+	width: 45%;
+}
+section#form div.left h4{
+	font-size: 40px;
+	font-weight: 700;
+	margin-bottom: 30px;
+}
+section#form div.left p{
+	margin-bottom: 30px;
+}
+section#form div.left ul{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+section#form div.left ul li{
+	display: flex;
+	width: 100%;
+}
+section#form div.left ul li div{
+	width: 15px;
+	margin: auto 10px auto 0;
+}
+section#form div.left ul li div img{
+	width: 100%;
+	display: block;
+}
+section#form div.left ul li p{
+	margin-bottom: 0;
+}
+section#form div.left ul li p b{
+	font-weight: 700;
+}
+section#form div.right{
+	width: 45%;
+}
+section#form div.right form{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+section#form div.right form input{
+	width: 100%;
+	border: 1px solid #000;
+	padding: 15px 10px;
+	background: #fff;
+	margin-bottom: 20px;
+	border-radius: 10px;
+}
+section#form div.right form select{
+	width: 100%;
+	border: 1px solid #000;
+	padding: 15px 10px;
+	background: #fff;
+	margin-bottom: 20px;
+	border-radius: 10px;
+}
+section#form div.right form input[type="checkbox"]{
+	width: 8%;
+	margin: 7px 0 0 0;
+}
+section#form div.right form p{
+	width: 90%;
+}
+section#form div.right form p a{
+	text-decoration: underline;
+}
+section#form div.right form a.button{
+	background: #00BFD8;
+    color: #fff;
+    font-weight: 700;
+    padding: 22px 35px;
+    border-radius: 50px;
+    width: 100%;
+    margin-top: 50px;
+    display: inline-block;
+    text-align: center;
+}
+section#form div.right form a.button:hover{
+	background: #fff;
+	border: 2px solid #00bfd8;
+	color: #00bfd8;
+}
+section#video{
+	padding: 10%;
+	text-align: center;
+	position: relative;
+}
+section#video h4{
+	font-size: 35px;
+	font-weight: 700;
+	margin-bottom: 30px;
+}
+section#video div{
+	width: 100%;
+	border-radius: 10px;
+	margin-bottom: 50px;
+}
+section#video div img{
+	width: 100%;
+	display: block;
+	border-radius: 10px;
+}
+section#video div.play{
+	background: #00BFD8;
+	border-radius: 50%;
+	width: 50px;
+	padding: 18px 16px 15px 20px;
+	position: absolute;
+	z-index: 2;
+	bottom: 45%;
+	left: 48%;
+}
+section#video div.play img{
+	width: 100%;
+	display: block;
+	filter: invert(100%);
+	border-radius: 0;
+}
+section#video p{
+	width: 75%;
+	margin: 0 auto;
+}
+section#video p b{
+	font-weight: 700;
+}
+section#about{
+}
+section#about section.wrapper{
+	border-bottom: 1px solid #000;
+}
+section#about div.top{
+	text-align: center;
+	margin-bottom: 50px;
+}
+section#about div.top h4{
+	font-size: 40px;
+	font-weight: 700;
+	margin-bottom: 30px;
+}
+section#about div.top p{
+	width: 70%;
+	margin: 0 auto 30px;
+}
+section#about div.top ul{
+	display: flex;
+	justify-content: space-between;
+}
+section#about div.top ul li{
+	width: 22.5%;
+}
+section#about div.top ul li div{
+	border-radius: 50%;
+	width: 75%;
+	margin: 0 auto 30px;
+}
+section#about div.top ul li div img{
+	width: 100%;
+	display: block;
+	border-radius: 50%;
+}
+section#about div.top ul li h3{
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+section#about div.top ul li p{
+	margin-bottom: 20px;
+}
+section#about div.top ul li div.social{
+	display: flex;
+	justify-content: space-between;
+	width: 30%;
+}
+section#about div.top ul li div.social div{
+	width: 30px;
+}
+section#about div.top ul li div.social div img{
+	width: 100%;
+	display: block;
+}
+section#about div.bottom{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 50px;
+}
+section#about div.bottom div{
+	width: 28%;
+}
+section#about div.bottom div h4{
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+section#about div.bottom div p{
+}
+section#about div.bottom div ul{
+}
+section#about div.bottom div ul li{
+	width: 100%;
+	display: flex;
+}
+section#about div.bottom div ul li:first-child{
+	margin-bottom: 10px;
+}
+section#about div.bottom div ul li div{
+	width: 20px;
+	margin-right: 10px;
+}
+section#about div.bottom div ul li div img{
+	width: 100%;
+	display: block;
+}
+section#about div.bottom div ul li p{
+}
+section#about div.bottom div ul li p a{
+	text-decoration: underline;
+	color: #00BFD8;
+}
+section#about div.bottom div.social{
+	width: 35%;
+}
+section#about div.bottom div.social ul{
+	display: flex;
+}
+section#about div.bottom div.social ul li{
+	width: 30px;
+	margin:0 20px 0 0;
+}
+section#about div.bottom div.social ul li img{
+	width: 100%;
+	display: block;
+}
+footer{
+	padding: 15px 0;
+	text-align: center;
+}
+footer p{
+}
+@media all and (max-width:1280px){
+	section#home header nav ul li {
+	    margin: auto 18px auto 0;
+	}
+	section#about div.top ul li div.social{
+		width: 45%;
+	}
+	section#form div.left ul li{
+		margin-bottom: 10px;
+	}
+	section#form div.left ul li:last-child{
+		margin-bottom: 0;
+	}
+	section#form div.left ul li div{
+		margin: 8px 10px 0 0;
+	}
+}
+@media all and (max-width:980px){
+	section#home {
+	    background-position: top -70% left 60%;
+	}
+	section#home header{
+		margin-bottom: 0;
+	}
+	section#home section.spotlight{
+		flex-wrap: wrap;
+	}
+	section#home section.spotlight div.left{
+		width: 100%;
+	}
+	section#home section.spotlight div.right{
+		width: 75%;
+		margin: 30px auto;
+	}
+	section#home section.spotlight div.left h4.top{
+		color: #000;
+	}
+	section#pricing ul{
+		flex-wrap: wrap;
+	}
+	section#pricing ul li{
+		width: 45%;
+		margin-bottom: 50px;
+	}
+	section#pricing ul li:last-child{
+		margin: 0 auto;
+	}
+	section#form section.wrapper{
+		flex-wrap: wrap;
+	}
+	section#form div.left{
+		width: 100%;
+		margin-bottom: 50px;
+	}
+	section#form div.right{
+		width: 100%;
+	}
+}
+@media all and (max-width:768px){
+	section#home {
+    	background-position: top 50% left 60%;
+	}
+	section#home header nav ul li.arrow{
+		display: none;
+	}
+	section#market div.bottom ul{
+		flex-wrap: wrap;
+	}
+	section#market div.bottom ul li{
+		width: 45%;
+		margin-bottom: 30px;
+	}
+	section#market div.bottom ul li:last-child{
+		margin: 0 auto;
+	}
+	section#design ul li{
+		flex-wrap: wrap;
+	}
+	section#design ul li div.head{
+		width: 100%;
+	}
+	section#market{
+		margin-bottom: 0;
+	}
+	section#design ul li div.image{
+		margin: 0 auto;
+	}
+	section#pricing ul li{
+		width: 80%;
+		margin: 0 auto 30px;
+	}
+	section#pricing ul li a.button{
+		left: 35%;
+	}
+	section#about div.top ul li div.social{
+		width: 60%;
+	}
+	section#about div.bottom div.social ul li {
+    	width: 30px;
+    	margin-right: 15px;
+	}
+	section#video div.play{
+		bottom: 48%;
+	}
+}
+@media all and (max-width:640px){
+	section#home header nav{
+		display: none;
+	}
+	section#home header div.menu-icon{
+		display: block;
+	}
+	section#home header h1{
+		margin: 0 auto;
+	}
+	section#home header{
+		margin-bottom: 0;
+	}
+	section#home section.spotlight div.left h4.top{
+		margin-top: 20px;
+		font-size: 35px;
+	}
+	section#home section.spotlight div.left h4.bottom{
+		font-size: 35px;
+		margin-bottom: 25px;
+	}
+	section#home section.spotlight div.left p{
+		margin-bottom: 25px;
+	}
+	section#market div.top{
+		margin-top: 25px;
+	}
+	section#market div.top div{
+		margin: 0 auto 50px;
+	}
+	section#market div.bottom h5{
+		width: 90%;
+	}
+	section#market div.bottom p{
+		width: 90%;
+	}
+	section#market div.bottom ul li{
+		width: 75%;
+		margin: 0 auto 20px;
+	}
+	section#design ul li div.head h4{
+		margin: 50px auto 20px;
+		font-size: 35px;
+	}
+	section#design{
+		margin-bottom: 45px;
+	}
+	section#pricing h5{
+		width: 100%;
+		margin: 0 auto 20px;
+	}
+	section#pricing p{
+		width: 100%;
+	}
+	section#form div.left h4{
+		font-size: 30px;
+		margin-bottom: 20px;
+	}
+	section#about div.top ul{
+		flex-wrap: wrap;
+	}
+	section#about div.top ul li{
+		width: 45%;
+	}
+	section#about div.bottom{
+		flex-wrap: wrap;
+	}
+	section#about div.bottom div{
+		width: 45%;
+	}
+	section#about div.bottom div.social{
+		width: 100%;
+	}
+	section#about div.bottom div.social ul li{
+		margin: 0 15px 0 0;
+	}
+	section#video div.play{
+		bottom: 52%;
+		left: 45%;
+	}
+}
+@media all and (max-width:480px){
+	section#home section.spotlight div.left h4.top{
+		margin: 0;
+	}
+	section#home section.spotlight div.right{
+		margin: 15px auto 0;
+	}
+	section#market div.top div ul{
+		flex-wrap: wrap;
+	}
+	section#market div.top div ul li{
+		width: 30%;
+		margin-bottom: 20px;
+	}
+	section#market div.top div ul li:nth-child(5){
+		margin: 0 auto;
+	}
+	section#market div.top div ul li:nth-child(4){
+		margin: 0 auto;
+	}
+	section#market div.top div{
+		margin: 0 auto 25px;
+	}
+	section#market div.bottom h5{
+		margin: 0 auto 10px;
+	}
+	section#market div.bottom p{
+		margin: 0 auto 25px;
+	}
+	section#market div.bottom ul li{
+		width: 85%;
+	}
+	section#design ul li div.head h4{
+		margin: 25px auto 15px;
+	}
+	section#design ul li div.head p{
+		margin-bottom: 25px;
+	}
+	section#design ul li div.image{
+		margin: 30px auto 0;
+	}
+	section#design ul li:first-child{
+		margin-bottom: 0;
+	}
+	section#pricing ul li{
+		width: 95%;
+	}
+	section#pricing ul li a.button{
+		left: 25%;
+	}
+	section#pricing{
+		margin-bottom: 50px;
+	}
+	section#video div.play{
+		width: 40px;
+		padding: 14px;
+	}
+	section#video p{
+		width: 100%;
+	}
+	section#about div.top h4{
+		margin-bottom: 15px;
+	}
+	section#about div.top p{
+		width: 100%;
+		margin: 0 auto 15px;
+	}
+	section#about div.top{
+		margin-bottom: 0;
+	}
+	section#about div.bottom div{
+		width: 100%;
+		margin-bottom: 20px;
+		text-align: center;
+	}
+	section#about div.bottom div h4{
+		margin-bottom: 10px;
+	}
+	section#about div.bottom div ul li{
+		margin-left: 25px;
+	}
+	section#about div.bottom{
+		margin-bottom: 10px;
+	}
+	section#about div.bottom div.social ul{
+		margin-left: 35px;
+	}
+	section#video h4{
+		font-size: 28px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
